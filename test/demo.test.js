@@ -6,9 +6,10 @@ import { queryPayments } from '../src/adapter.js';
 import { mapPage, fields } from '../src/mapping.js';
 import { payments } from '../src/data.js';
 
-async function fixture(t) {
+async function fixture(t, { timeoutMs = 2000, slowMs = 3000 } = {}) {
   const logs = [];
-  const server = createDemoServer({ timeoutMs: 120, slowMs: 300, log: row => logs.push(row) });
+  // Ordinary tests need CI scheduling headroom; timeout behavior has its own fixture.
+  const server = createDemoServer({ timeoutMs, slowMs, log: row => logs.push(row) });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   t.after(() => { server.close(); server.closeAllConnections(); });
@@ -97,7 +98,8 @@ test('provider outage becomes a sanitized 502', async t => {
   assert.equal(JSON.stringify(result.body).includes('stack'), false);
 });
 test('provider deadline becomes a 504', async t => {
-  const { get } = await fixture(t);
+  // Keep a deliberately short deadline only for the deliberate slow-provider test.
+  const { get } = await fixture(t, { timeoutMs: 100, slowMs: 1000 });
   const result = await get(path + '?scenario=slow');
   assert.equal(result.status, 504);
   assert.equal(result.body.error.code, 'PROVIDER_TIMEOUT');

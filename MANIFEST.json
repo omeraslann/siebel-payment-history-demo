@@ -31,13 +31,13 @@
   },
   {
     "path": "docs/test-report.md",
-    "bytes": 2556,
-    "sha256": "c0f552f5637d94d184cea6be566c91fd0b9f36d9d09a2356572b4a99abeddbe9"
+    "bytes": 3449,
+    "sha256": "52d697451695dfd23d3a122803e18d70031fa8612f62a274f179e15d0624f67d"
   },
   {
     "path": "examples/demo.js",
-    "bytes": 725,
-    "sha256": "049a81861b4bcc9db7a92af820175f4daa1e3d86672293783a919789649a9938"
+    "bytes": 727,
+    "sha256": "723b1cc196c9cd453654cdfd29f61407174d1095196383a1fe5085f6b5fd22d0"
   },
   {
     "path": "examples/error.json",
@@ -86,7 +86,7 @@
   },
   {
     "path": "test/demo.test.js",
-    "bytes": 7697,
-    "sha256": "3cf4c5f9f907cc8b0a0aa871b7e51461d70306e9e87d1d1ce81dbb4f93a1308c"
+    "bytes": 7934,
+    "sha256": "969b53faaef1fcff2daf67352f3b34c082fd103f008cc0d36c0a48583d07efc5"
   }
 ]

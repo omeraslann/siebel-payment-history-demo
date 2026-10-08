@@ -33,3 +33,9 @@ The ZIP was extracted into a separate temporary directory. The extracted project
 ## Not verified
 
 Native Siebel configuration, eScript, real PropertySets, applet rendering, search-spec translation, native paging, access control, external transport, real provider integration, Node.js 22, Windows/macOS and hosted GitHub Actions have not been verified locally. The included CI workflow is intended to test Node.js 22 and 24 after publication. A hosted pass must be confirmed separately.
+
+## CI timing correction
+
+The first published revision passed the hosted Node.js 22 job, but its Node.js 24 job exposed a timing-sensitive test: the shared 120 ms test deadline expired during an otherwise successful HTTP request. Ordinary tests now use a 2,000 ms budget. The timeout test uses a separate 100 ms deadline against a deliberate 1,000 ms provider delay and still requires HTTP 504 with `PROVIDER_TIMEOUT`. The walkthrough uses a 1,000 ms deadline and a 2,000 ms fault delay. The interactive server's default 500 ms deadline is unchanged.
+
+After this correction, five consecutive local runs of both `npm test` (30/30 each time) and `npm run demo` passed on Node.js 24.19.0. Coverage remained unchanged. The replacement ZIP was extracted and reverified. Hosted CI for this correction must be checked on its exact new commit; the earlier job results do not establish that it passed.
