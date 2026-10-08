@@ -1,0 +1,92 @@
+[
+  {
+    "path": ".github/workflows/test.yml",
+    "bytes": 357,
+    "sha256": "8d1ea50c84c9b1ae81c8c179a40d0e9228a2589f9711bc2bd37a51fbe9158a26"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 52,
+    "sha256": "6801859088dd0a310e06aec0fdb42297db39fd3b88a8a77fe8579d45c31f6106"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6890,
+    "sha256": "65d8366f0e61e97efa2c77ac72f6b2a0163a53846d385b12cece5c1113e5863f"
+  },
+  {
+    "path": "docs/api.md",
+    "bytes": 2640,
+    "sha256": "81abcd0c6caa941d09c403d35c4ce8ab4c1e6fa19b1a7155a247f7dfff3b0cee"
+  },
+  {
+    "path": "docs/architecture.md",
+    "bytes": 3566,
+    "sha256": "88bc228281fe1738242b730906a8ae0b11f0d179aec367ee65c30a0992b909fa"
+  },
+  {
+    "path": "docs/siebel-plan.md",
+    "bytes": 4661,
+    "sha256": "22b014617f1cbe32d3c948ab748430f3006472a84d2e32c707a4521351ef55d2"
+  },
+  {
+    "path": "docs/test-report.md",
+    "bytes": 2556,
+    "sha256": "c0f552f5637d94d184cea6be566c91fd0b9f36d9d09a2356572b4a99abeddbe9"
+  },
+  {
+    "path": "examples/demo.js",
+    "bytes": 725,
+    "sha256": "049a81861b4bcc9db7a92af820175f4daa1e3d86672293783a919789649a9938"
+  },
+  {
+    "path": "examples/error.json",
+    "bytes": 149,
+    "sha256": "3e153c626eab0d38cb49b42a17d48a5a4fb8ed9056c40cc41718ad5713a7a95c"
+  },
+  {
+    "path": "examples/success.json",
+    "bytes": 843,
+    "sha256": "9cefd5cc59b8da9cf5eec1e251d31180c9236a81bf55319e8d31b8324bf284c6"
+  },
+  {
+    "path": "package.json",
+    "bytes": 423,
+    "sha256": "61edd72dd253e56e79fe787e9bceb16b6d45089d95281f2d3994270fdae44384"
+  },
+  {
+    "path": "src/adapter.js",
+    "bytes": 1338,
+    "sha256": "0d76396c14e356c2c20313a20846019aeb9e2299f0b26d8fec1bcaa3307c190f"
+  },
+  {
+    "path": "src/data.js",
+    "bytes": 851,
+    "sha256": "39ee06179f7541dfd51e25020c07a9160e07ed67a7f2644a4f725732648e617c"
+  },
+  {
+    "path": "src/errors.js",
+    "bytes": 151,
+    "sha256": "a0d51337a549cdbc8facf5d99838bb1eef14e868d0c31f4707b52f1535f85eaa"
+  },
+  {
+    "path": "src/mapping.js",
+    "bytes": 2046,
+    "sha256": "ed3125b6034f15095b5c837e50fe4e8e1410f9b293d18e71e4f93e60e38213c7"
+  },
+  {
+    "path": "src/server.js",
+    "bytes": 4121,
+    "sha256": "e361f26ca9f1643b9515b7b53d88b8cb24f538537dba605b8895d02f4cb27b8f"
+  },
+  {
+    "path": "src/validation.js",
+    "bytes": 1157,
+    "sha256": "df9a99c8e82b787e03d66bdf279eb90dde5f054e30ebf00555c456bd0bcaa3b9"
+  },
+  {
+    "path": "test/demo.test.js",
+    "bytes": 7697,
+    "sha256": "3cf4c5f9f907cc8b0a0aa871b7e51461d70306e9e87d1d1ce81dbb4f93a1308c"
+  }
+]

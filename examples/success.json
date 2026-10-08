@@ -1,0 +1,37 @@
+{
+  "type": "MockPropertySet",
+  "properties": {
+    "Page": "1",
+    "PageSize": "2",
+    "Total": "3",
+    "HasMore": "true"
+  },
+  "children": [
+    {
+      "type": "MockRow",
+      "properties": {
+        "External Payment Id": "PAY-003",
+        "Customer External Id": "CUST-1001",
+        "Payment Date": "2026-09-23",
+        "Amount": "1299.50",
+        "Currency": "TRY",
+        "Payment Status": "Completed",
+        "Masked Account": "****0042"
+      },
+      "children": []
+    },
+    {
+      "type": "MockRow",
+      "properties": {
+        "External Payment Id": "PAY-002",
+        "Customer External Id": "CUST-1001",
+        "Payment Date": "2026-09-17",
+        "Amount": "75.00",
+        "Currency": "TRY",
+        "Payment Status": "Pending",
+        "Masked Account": "****0042"
+      },
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "siebel-payment-history-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-friendly Siebel-inspired payment history integration portfolio demo",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "demo": "node examples/demo.js"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "error": {
+    "code": "PROVIDER_UNAVAILABLE",
+    "message": "The payment service is unavailable.",
+    "correlationId": "demo-request-1"
+  }
+}
